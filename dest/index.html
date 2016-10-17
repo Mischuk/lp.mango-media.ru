@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+
+	<head>
+		<title>Mango Media | РАЗРАБОТКА ЛЕНДИНГ ПЕЙДЖ</title>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="msapplication-tap-highlight" content="no">
+		<link type="image/x-icon" href="favicon.ico" rel="icon">
+		<link href="css/plugins.css" rel="stylesheet">
+		<link href="css/app.min.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<!-- ty popup-->
+		<a class="popup-with-zoom-anim" id="ty" href="#popup-ty"></a>
+		<div class="zoom-anim-dialog mfp-hide popup" id="popup-ty">
+			<a class="popup-modal-dismiss" href="#">×</a>
+			<div class="vertical-outer">
+				<div class="vertical-inner">
+					<div class="small-container">
+						<h2 data-title="Спасибо!">Спасибо!</h2>
+						<p data-title="мы получили вашу заявку и скоро с вами свяжемся.">мы получили вашу заявку и скоро с вами свяжемся.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Callback project-->
+		<div class="zoom-anim-dialog mfp-hide popup" id="popup-callbackprj">
+			<a class="popup-modal-dismiss" href="#">×</a>
+			<div class="vertical-outer">
+				<div class="vertical-inner">
+					<div class="small-container">
+						<h2 data-title="Оценка проекта">Оценка проекта</h2>
+						<p data-title="заполните форму, чтобы мы смогли с вами связаться">заполните форму, чтобы мы смогли с вами связаться</p>
+						<form class="form" action="form-callback.php" method="post">
+							<div class="row full">
+								<div class="form-label">
+									<input class="form-input" name="name" type="text" autocomplete="off" placeholder="Ваше имя" required="required">
+								</div>
+							</div>
+							<div class="row full">
+								<div class="form-label">
+									<input class="form-input" name="tel" type="tel" autocomplete="off" placeholder="Ваш телефон" required="required">
+								</div>
+							</div>
+							<div class="row full">
+								<div class="form-label">
+									<input class="form-input" name="email" type="email" autocomplete="off" placeholder="Ваш email" required="required">
+								</div>
+							</div>
+							<div class="form-submit">
+								<input name="types" type="hidden" value>
+								<button class="form-submit button ripple" type="submit">Отправить</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Callback-->
+		<div class="zoom-anim-dialog mfp-hide popup" id="popup-callback">
+			<a class="popup-modal-dismiss" href="#">×</a>
+			<div class="vertical-outer">
+				<div class="vertical-inner">
+					<div class="small-container">
+						<h2 data-title="Обратный звонок">Обратный звонок</h2>
+						<p data-title="заполните форму, чтобы мы смогли с вами связаться">заполните форму, чтобы мы смогли с вами связаться</p>
+						<form class="form" action="form-callback.php" method="post">
+							<div class="row full">
+								<div class="form-label">
+									<input class="form-input" name="name" type="text" autocomplete="off" placeholder="Ваше имя" required="required">
+								</div>
+							</div>
+							<div class="row full">
+								<div class="form-label">
+									<input class="form-input" name="tel" type="tel" autocomplete="off" placeholder="Ваш телефон" required="required">
+								</div>
+							</div>
+							<div class="row full">
+								<div class="form-label">
+									<input class="form-input" name="email" type="email" autocomplete="off" placeholder="Ваш email" required="required">
+								</div>
+							</div>
+							<div class="form-submit">
+								<button class="form-submit button ripple" type="submit">Отправить</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- project-->
+		<div class="zoom-anim-dialog mfp-hide popup" id="popup-project">
+			<a class="popup-modal-dismiss" href="#">×</a>
+			<div class="vertical-outer">
+				<div class="vertical-inner">
+					<div class="small-container">
+						<h2 data-title="Расскажите о проекте">Расскажите о проекте</h2>
+						<p data-title=" "></p>
+						<form class="form" action="form-project.php" method="post">
+							<div class="row full">
+								<div class="form-label">
+									<select class="js-select">
+										<option value selected disabled>Выберите категорию</option>
+										<option value="Бизнес, товары">Бизнес, товары</option>
+										<option value="Консалтинг">Консалтинг</option>
+										<option value="Ремонт, строительство">Ремонт, строительство</option>
+										<option value="Мебель, интерьеры">Мебель, интерьеры</option>
+										<option value="Программы, IT">Программы, IT</option>
+										<option value="Сфера развлечений">Сфера развлечений</option>
+										<option value="Обучение, курсы">Обучение, курсы</option>
+										<option value="Личные страницы">Личные страницы</option>
+										<option value="Финансы, экономика">Финансы, экономика</option>
+										<option value="Юридические услуги">Юридические услуги</option>
+										<option value="Автомобили аксесуары">Автомобили аксесуары</option>
+										<option value="Строительство, недвижимость">Строительство, недвижимость</option>
+										<option value="Путешествия, услуги">Путешествия, услуги</option>
+										<option value="Одежда и аксуссуары">Одежда и аксуссуары</option>
+										<option value="Услуги для дома/офиса">Услуги для дома/офиса</option>
+										<option value="Кафе, рестораны">Кафе, рестораны</option>
+										<option value="Производство">Производство</option>
+										<option value="Медицина">Медицина</option>
+										<option value="Другое">Другое</option>
+									</select>
+								</div>
+							</div>
+							<div class="row full">
+								<div class="form-label">
+									<input class="form-input" name="email" type="email" autocomplete="off" placeholder="Ваш email" required="required">
+								</div>
+							</div>
+							<div class="row full">
+								<div class="form-label">
+									<textarea class="form-textarea" name="textarea" placeholder="Ваше сообщение" required="required"></textarea>
+								</div>
+							</div>
+							<div class="form-submit">
+								<input name="project-category" type="hidden" value>
+								<button class="form-submit button ripple" type="submit">Отправить</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<section class="m_lead">
+			<div class="wrapper">
+				<header>
+					<a class="logo" href="#">
+						<img src="images/logo.png" alt>
+					</a>
+					<div class="contacts">
+						<div class="tel">
+							<a href="tel:+84952550566">8 (495) 255 05 66</a>
+						</div>
+						<div class="callback">
+							<a class="popup-with-zoom-anim" href="#popup-callback">Заказать звонок</a>
+						</div>
+					</div>
+				</header>
+				<div class="vertical-outer">
+					<div class="vertical-inner">
+						<h1>
+							<span>РАЗРАБОТКА</span>ЛЕНДИНГ ПЕЙДЖ</h1>
+						<P>Оригинальные идеи и проверенные техники создания продающих сайтов
+							<br>для увеличения спроса на ваш продукт</P>
+						<div class="action">
+							<a class="button ripple popup-with-zoom-anim" href="#popup-project">Расскажите о своем проекте</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="m_about">
+			<div class="wrapper">
+				<p>Mango Media (digital agency) - это креативная команда разработчиков, с высокой компетенцией в области проектирования, дизайна, стратегии подвижения и автоматизации. Именно благодаря созданию нового сайта, мы, совершенствуем образ продукта, делая его
+					востребованным, а бизнес эффективным.
+					<br>Наша цель - всегда помогать своим клиентам быть на шаг впереди рынка.</p>
+			</div>
+		</section>
+		<section class="m_services">
+			<div class="wrapper">
+				<div class="column">
+					<div class="vertical-outer">
+						<div class="vertical-inner">
+							<div class="section-title">
+								<h2>
+									<span>Что мы </span>делаем?</h2>
+								<p>Мы оказываем полный комплекс услуг, решающий все задачи по разработке и продвижению сайта.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="column">
+					<div class="vertical-outer">
+						<div class="vertical-inner">
+							<div class="list">
+								<div class="item">
+									<div class="image">
+										<img src="images/service-1.png" alt>
+									</div>
+									<div class="title">Проектирование</div>
+									<ul>
+										<li>Информационная архитектура</li>
+										<li>Прототипирование</li>
+										<li>Копирайтинг</li>
+									</ul>
+								</div>
+								<div class="item">
+									<div class="image">
+										<img src="images/service-2.png" alt>
+									</div>
+									<div class="title">Дизайн</div>
+									<ul>
+										<li>Дизайна сайта</li>
+										<li>Фирменный стиль</li>
+										<li>Визуализации</li>
+									</ul>
+								</div>
+								<div class="item">
+									<div class="image">
+										<img src="images/service-3.png" alt>
+									</div>
+									<div class="title">Разработка</div>
+									<ul>
+										<li>Верстка (front-end, back-end)</li>
+										<li>Интеграция с CRM</li>
+										<li>Установка скриптов</li>
+									</ul>
+								</div>
+								<div class="item">
+									<div class="image">
+										<img src="images/service-4.png" alt>
+									</div>
+									<div class="title">Маркетинг</div>
+									<ul>
+										<li>Реламные кампании</li>
+										<li>Веб-аналитика</li>
+										<li>Оптимизация</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="m_works">
+			<div class="wrapper">
+				<h2>примеры наших работ</h2>
+			</div>
+			<div class="list">
+				<div class="item" style="background-image: url(images/works/1.jpg)">
+					<div class="details">
+						<div class="title">Works title</div>
+						<div class="tags">Tags</div>
+						<a class="ripple" href="#"></a>
+					</div>
+				</div>
+				<div class="item" style="background-image: url(images/works/2.jpg)">
+					<div class="details">
+						<div class="title">Works title</div>
+						<div class="tags">Tags</div>
+						<a class="ripple" href="#"></a>
+					</div>
+				</div>
+				<div class="item" style="background-image: url(images/works/3.jpg)">
+					<div class="details">
+						<div class="title">Works title</div>
+						<div class="tags">Tags</div>
+						<a class="ripple" href="#"></a>
+					</div>
+				</div>
+				<div class="item" style="background-image: url(images/works/4.jpg)">
+					<div class="details">
+						<div class="title">Works title</div>
+						<div class="tags">Tags</div>
+						<a class="ripple" href="#"></a>
+					</div>
+				</div>
+				<div class="item" style="background-image: url(images/works/5.jpg)">
+					<div class="details">
+						<div class="title">Works title</div>
+						<div class="tags">Tags</div>
+						<a class="ripple" href="#"></a>
+					</div>
+				</div>
+				<div class="item" style="background-image: url(images/works/6.jpg)">
+					<div class="details">
+						<div class="title">Works title</div>
+						<div class="tags">Tags</div>
+						<a class="ripple" href="#"></a>
+					</div>
+				</div>
+				<div class="item" style="background-image: url(images/works/7.jpg)">
+					<div class="details">
+						<div class="title">Works title</div>
+						<div class="tags">Tags</div>
+						<a class="ripple" href="#"></a>
+					</div>
+				</div>
+				<div class="item" style="background-image: url(images/works/8.jpg)">
+					<div class="details">
+						<div class="title">Works title</div>
+						<div class="tags">Tags</div>
+						<a class="ripple" href="#"></a>
+					</div>
+				</div>
+			</div>
+			<div class="action">
+				<a class="button ripple" href="#">Смотреть портфолио</a>
+			</div>
+		</section>
+		<section class="m_prices">
+			<div class="wrapper">
+				<h2>стоимость проекта</h2>
+				<p>зависит от входящих в разрабботку услуг, для начала выберите из списка то, что считаете нужными</p>
+				<div class="columns">
+					<div class="column">
+						<div class="title">Проектирование,
+							<br>дизайн</div>
+						<div class="list">
+							<div class="item">
+								<label>
+									<input name="services" type="checkbox" value="Анализ рынка и конкурентов">
+									<span class="cb-icon"></span>
+									<span class="cb-label">Анализ рынка и конкурентов</span>
+								</label>
+							</div>
+							<div class="item">
+								<label>
+									<input name="services" type="checkbox" value="Копирайтинг + архитектура">
+									<span class="cb-icon"></span>
+									<span class="cb-label">Копирайтинг + архитектура</span>
+								</label>
+							</div>
+							<div class="item">
+								<label>
+									<input name="services" type="checkbox" value="Прототипирование (UX)">
+									<span class="cb-icon"></span>
+									<span class="cb-label">Прототипирование (UX)</span>
+								</label>
+							</div>
+							<div class="item">
+								<label>
+									<input name="services" type="checkbox" value="Разработка дизайн-макетов сайта">
+									<span class="cb-icon"></span>
+									<span class="cb-label">Разработка дизайн-макетов сайта</span>
+								</label>
+							</div>
+							<div class="item">
+								<label>
+									<input name="services" type="checkbox" value="Разработка фирменного стиля">
+									<span class="cb-icon"></span>
+									<span class="cb-label">Разработка фирменного стиля</span>
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="column">
+						<div class="title">Разроботка
+							<br>(Front-End, Back-end)</div>
+						<div class="list">
+							<div class="item">
+								<label>
+									<input name="services" type="checkbox" value="Верстка макетов сайта">
+									<span class="cb-icon"></span>
+									<span class="cb-label">Верстка макетов сайта</span>
+								</label>
+							</div>
+							<div class="item">
+								<label>
+									<input name="services" type="checkbox" value="Анимация. Параллакс эффекты">
+									<span class="cb-icon"></span>
+									<span class="cb-label">Анимация. Параллакс эффекты</span>
+								</label>
+							</div>
+							<div class="item">
+								<label>
+									<input name="services" type="checkbox" value="Адаптация под мобильные устройства">
+									<span class="cb-icon"></span>
+									<span class="cb-label">Адаптация под мобильные устройства</span>
+								</label>
+							</div>
+							<div class="item">
+								<label>
+									<input name="services" type="checkbox" value="Подключение CMS">
+									<span class="cb-icon"></span>
+									<span class="cb-label">Подключение CMS</span>
+								</label>
+							</div>
+							<div class="item">
+								<label>
+									<input name="services" type="checkbox" value="Интеграция с CRM системой">
+									<span class="cb-icon"></span>
+									<span class="cb-label">Интеграция с CRM системой</span>
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="column">
+						<div class="title">Настройка,
+							<br>маркетинг</div>
+						<div class="list">
+							<div class="item">
+								<label>
+									<input name="services" type="checkbox" value="Подключение веб-аналитики">
+									<span class="cb-icon"></span>
+									<span class="cb-label">Подключение веб-аналитики</span>
+								</label>
+							</div>
+							<div class="item">
+								<label>
+									<input name="services" type="checkbox" value="Настройка контекстной рекламы">
+									<span class="cb-icon"></span>
+									<span class="cb-label">Настройка контекстной рекламы</span>
+								</label>
+							</div>
+							<div class="item">
+								<label>
+									<input name="services" type="checkbox" value="Установка дополнительных скриптов">
+									<span class="cb-icon"></span>
+									<span class="cb-label">Установка дополнительных скриптов</span>
+								</label>
+							</div>
+							<div class="item">
+								<label>
+									<input name="services" type="checkbox" value="Настройка системы «мультилендинг»">
+									<span class="cb-icon"></span>
+									<span class="cb-label">Настройка системы «мультилендинг»</span>
+								</label>
+							</div>
+							<div class="item">
+								<label>
+									<input name="services" type="checkbox" value="А/Б тестирования">
+									<span class="cb-icon"></span>
+									<span class="cb-label">А/Б тестирования</span>
+								</label>
+							</div>
+							<div class="item">
+								<label>
+									<input name="services" type="checkbox" value="Анализ и оптимизация РК">
+									<span class="cb-icon"></span>
+									<span class="cb-label">Анализ и оптимизация РК</span>
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="action">
+					<a class="button ripple popup-with-zoom-anim" href="#popup-callbackprj">Узнать стоимость проекта</a>
+				</div>
+			</div>
+		</section>
+		<section class="m_steps">
+			<div class="wrapper">
+				<h2>Прозрачный процесс разработки</h2>
+				<p>Мы делаем работу над проектом максимально прозрачной и понятной для своих клиентов, согласовывая каждый этап</p>
+				<div class="steps-nav">
+					<ul>
+						<li class="current">1</li>
+						<li>2</li>
+						<li>3</li>
+						<li>4</li>
+						<li>5</li>
+					</ul>
+				</div>
+				<div class="steps">
+					<div class="item current">
+						<div class="image">
+							<img src="images/step-1.png" alt>
+						</div>
+						<div class="title">Бриф</div>
+						<div class="desc">Определение задач проекта, обсуждение особенностей бизнеса, согласование работ, составление тех. задания</div>
+					</div>
+					<div class="item">
+						<div class="image">
+							<img src="images/step-2.png" alt>
+						</div>
+						<div class="title">Прототип</div>
+						<div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
+					</div>
+					<div class="item">
+						<div class="image">
+							<img src="images/step-3.png" alt>
+						</div>
+						<div class="title">Дизайн</div>
+						<div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
+					</div>
+					<div class="item">
+						<div class="image">
+							<img src="images/step-4.png" alt>
+						</div>
+						<div class="title">Верстка</div>
+						<div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
+					</div>
+					<div class="item">
+						<div class="image">
+							<img src="images/step-5.png" alt>
+						</div>
+						<div class="title">Запуск</div>
+						<div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="m_hook">
+			<div class="wrapper">
+				<h2>
+					<span>Остались </span>вопросы?</h2>
+				<div class="row">
+					<div class="contacts">
+						<div class="tel">
+							<a href="tel:74953503489">+7 (495) 350-34-89</a>
+						</div>
+						<div class="email">
+							<a href="mailto:mail@mango-media.ru">mail@mango-media.ru</a>
+						</div>
+					</div>
+					<div class="form-container">
+						<form class="form tyneed" action="form.php" method="post">
+							<div class="row">
+								<div class="form-label">
+									<input class="form-input" name="name" type="text" autocomplete="off" placeholder="Ваше имя" required="required">
+								</div>
+								<div class="form-label">
+									<input class="form-input" name="email" type="email" autocomplete="off" placeholder="Ваш email" required="required">
+								</div>
+							</div>
+							<div class="row full">
+								<div class="form-label">
+									<textarea class="form-textarea" name="textarea" placeholder="Ваше сообщение" required="required"></textarea>
+								</div>
+							</div>
+							<div class="form-submit">
+								<button class="form-submit button ripple" type="submit">Отправить</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="m_footer">
+			<div class="wrapper">
+				<div class="top">
+					<a class="logo" href="#">
+						<img src="images/logo-footer.png" alt>
+					</a>
+					<div class="contacts">
+						<div class="tel">
+							<a href="tel:+84993503489">8 (499) 350 34 89</a>
+						</div>
+						<div class="callback">
+							<a class="popup-with-zoom-anim" href="#popup-callback">Заказать звонок</a>
+						</div>
+					</div>
+				</div>
+				<div class="bottom">
+					<div class="services">
+						<div class="title">Наши услуги</div>
+						<ul>
+							<li>
+								<a href="http://context.mango-media.ru/" target="_blank">Контекстная реклама</a>
+							</li>
+							<li>
+								<a href="http://marketing.mango-media.ru/" target="_blank">Комплексный маркетинг</a>
+							</li>
+							<li>
+								<a href="http://lp.mango-media.ru/" target="_blank">Разработка Landing page</a>
+							</li>
+							<li>
+								<a href="http://instagram.mango-media.ru/" target="_blank">Продвижение в Instagram</a>
+							</li>
+						</ul>
+					</div>
+					<div class="socials">
+						<div class="title">Присоединяйтесь к нам:</div>
+						<a class="vk" href="https://vk.com/mango_media" target="_blank">
+							<img src="images/vk.png" alt>
+						</a>
+						<a class="facebook" href="https://www.facebook.com/mango.agency" target="_blank">
+							<img src="images/facebook.png" alt>
+						</a>
+						<a class="youtube" href="https://www.youtube.com/c/MangoMedia_channel" target="_blank">
+							<img src="images/youtube.png" alt>
+						</a>
+					</div>
+					<div class="locate">
+						<div class="loc">Москва, Рязанский проспект, 10/18
+							<br>БЦ "Хамелеон", офис 4.11</div>
+						<p>ООО "Манго Медиа"
+							<br>ОГРН 1137746984539</p>
+						<div class="politicy">
+							<a href="http://mango-lp.ru/conf.pdf">Политика конфидициальности</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- JS-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/plugins.js"></script>
+		<script src="js/app.js"></script>
+	</body>
+
+</html>

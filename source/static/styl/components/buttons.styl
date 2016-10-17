@@ -1,0 +1,105 @@
+// Mobile burger button
+.mobile-menu-trigger
+  anim()
+  display block
+  position absolute
+  z-index 10
+  left 0
+  top 50%
+  width 50%
+  height 40px
+  margin-top -(@height/2)
+  border 2px solid transparent
+  cursor pointer
+  background #810000
+  @media screen and (min-width: 768px)
+    display none
+  &:after,
+  &:before,
+  span
+    anim()
+    content ''
+    position absolute
+    left 50%
+    width 20px
+    margin-left -10px
+    height 2px
+    background #fff
+  &:before
+    top 10px
+  &:after
+    bottom 10px
+  span
+    top 50%
+    margin-top -1.5px
+  &.open
+    span
+      opacity 0
+      transform translateX(-5px)
+    &:after
+      transform rotate(135deg) translate(-6px, 6px)
+    &:before
+      transform rotate(-135deg) translate(-4px, -4px)
+
+.ripple
+  overflow:hidden;
+  position: relative;
+  box-sizing: border-box;
+  transform: translate3d(0, 0, 0);
+
+.ripple-effect
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,0.5);
+  user-select: none;
+  pointer-events: none;
+  padding: 0;
+  margin: 0;
+  opacity: 0.6;
+  transform: translate3d(-50%,-50%,0);
+
+.button
+  position relative
+  transition all 0.5s cubic-bezier(.33,.66,.66,1)
+  display: inline-block;
+  padding: 20px 50px 20px 20px;
+  cursor: pointer;
+  letter-spacing: 0.7px;
+  user-select: none;
+  box-shadow: 0px 1px 4px transparent;
+  margin: 20px;
+  font-size: 15px;
+  border 1px solid #777
+  background none
+  color #333
+  bold()
+  font-size 15px
+  text-transform uppercase
+  @media screen and (max-height: 450px)
+    padding 10px 20px
+  @media screen and (max-width: 420px)
+    font-size 14px
+    padding 10px
+  &:hover
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.8);
+    background #333
+    color #f1cc37
+    border-color #333
+    &:after
+      background-position 0 -31px
+  &:active
+    transition all 0.2s cubic-bezier(.33,.66,.66,1)
+    box-shadow: 0px 1px 4px transparent;
+  &:after
+    content ''
+    background: url('../images/btn-arrow.png') no-repeat 0 0;
+    width: 7px;
+    height: 14px;
+    position absolute
+    right 20px
+    top 50%
+    margin-top -7px
+    @media screen and (max-width: 420px)
+      display none
+    @media screen and (max-height: 450px)
+      display none

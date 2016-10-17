@@ -1,0 +1,103 @@
+.m_steps
+  padding 105px 0
+  background: rgba(255,255,255,1);
+  background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(236,236,236,1) 80%, rgba(236,236,236,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(50%, rgba(255,255,255,1)), color-stop(80%, rgba(236,236,236,1)), color-stop(100%, rgba(236,236,236,1)));
+  background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(236,236,236,1) 80%, rgba(236,236,236,1) 100%);
+  background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(236,236,236,1) 80%, rgba(236,236,236,1) 100%);
+  background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(236,236,236,1) 80%, rgba(236,236,236,1) 100%);
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(236,236,236,1) 80%, rgba(236,236,236,1) 100%);
+  @media screen and (max-width: 460px)
+    padding 50px 0
+  h2
+    black()
+    text-transform uppercase
+    font-size 60px
+    color #333
+    margin-bottom 25px
+    @media screen and (max-width: 992px)
+      font-size 55px
+    @media screen and (max-width: 680px)
+      font-size 45px
+    @media screen and (max-width: 360px)
+      font-size 35px
+    & + p
+      font-size 19px
+      color #333333
+  .steps-nav
+    max-width 815px
+    margin 60px auto 30px auto
+    ul
+      clearfix()
+    li
+      bold()
+      anim()
+      position relative
+      float left
+      width 50px
+      height 50px
+      border 2px solid #dfdfdf
+      font-size 18px
+      line-height 50px
+      color #bfbfbf
+      margin-right 140px
+      @media screen and (max-width: 900px)
+        float none
+        display inline-block
+        vertical-align middle
+        margin-left 5%
+        margin-right 5%
+      @media screen and (max-width: 568px)
+        margin-left 2%
+        margin-right 2%
+      @media screen and (max-width: 380px)
+        margin-right 1%
+        margin-left 1%
+        width 40px
+        height 40px
+        line-height 40px
+      &:last-child
+        margin-right 0
+        &:after
+          display none
+      &:hover,
+      &.current
+        background #333333
+        color #fbe44e
+        border-color #333
+        cursor default
+      &:after
+        content ''
+        width 115px
+        height 2px
+        border-bottom 2px dashed #dfdfdf
+        position absolute
+        left 60px
+        top 50%
+        margin-top -1px
+        @media screen and (max-width: 900px)
+          display none
+  .steps
+    .item
+      &.slick-current
+        display block
+      .image
+        height 220px
+        width 220px
+        margin 0 auto
+        text-align center
+        line-height 220px
+        img
+          display inline-block
+          vertical-align middle
+      .title
+        black()
+        font-size 34px
+        color #333
+        margin-bottom 15px
+      .desc
+        color #777
+        font-size 18px
+        line-height 25px
+        max-width 500px
+        margin 0 auto

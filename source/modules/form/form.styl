@@ -1,0 +1,113 @@
+.form
+  textarea, input
+    regular()
+    max-width 600px
+    margin-left auto
+    @media screen and (max-width: 768px)
+      max-width 100%
+  label.error
+    display none !important
+  .row
+    .form-label
+      float left
+      width 50%
+      padding-right 15px
+      @media screen and (max-width: 480px)
+        float none
+        width 100%
+        padding-right 0
+      &:last-child
+        padding-right 0
+        padding-left 15px
+        @media screen and (max-width: 480px)
+          padding-left 0
+    &.full
+      .form-label
+        width 100%
+        float none
+        padding-left 0
+        padding-right 0
+  .form-label
+    margin-bottom 30px
+    @media screen and (max-width: 480px)
+      margin-bottom 15px
+    @media screen and (max-height: 450px)
+      margin-bottom 15px
+    .select2-container
+      width 100% !important
+      margin-top 25px
+      @media screen and (max-height: 450px)
+        margin-top 0
+      .select2-selection--single
+        height 60px
+        border none
+        border-bottom 2px solid #eee
+        .select2-selection__arrow
+          width 33px
+          height 18px
+          background url("../images/select.png") no-repeat 0 0
+          top 50%
+          right 5px
+          margin-top -9px
+          b
+            display none
+        .select2-selection__rendered
+          line-height 60px
+          color #bfbfbf
+          padding-right 45px
+          padding-left 10px
+          font-size 18px
+          &.selected
+            font-size 24px
+            color #333
+    input, textarea
+      width 100%
+      padding-left 10px
+      padding-right 10px
+      border 2px solid #eeeeee
+      &:focus
+        border-color #fbe44e
+    input
+      height 60px
+      font-size 18px
+      border-left none
+      border-right none
+      border-top none
+      font-size 24px
+      color #333
+    textarea
+      height 150px
+      padding-top 10px
+      padding-bottom 10px
+      resize none
+  .form-submit
+    text-align right
+    .form-submit
+      padding-left 70px
+      padding-right 70px
+      margin 0
+.select2-dropdown
+  border none
+.select2-results__options
+  position relative
+  background #fcfcfc
+  border 2px solid #eeeeee
+  margin-top 2px
+.select2-container--default .select2-results>.select2-results__options
+  max-height 280px
+  text-align left
+  li
+    font-size 24px
+    padding-left 20px
+    padding-right 20px
+    @media screen and (max-width: 568px)
+      font-size 16px
+      padding-left 10px
+      padding-right 10px
+    @media screen and (max-height: 600px)
+      font-size 16px
+      padding-left 10px
+      padding-right 10px
+
+input.error
+  border-color #ff0000 !important

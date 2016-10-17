@@ -1,0 +1,133 @@
+.m_footer
+  background #2c2c2c
+  text-align left
+  padding-bottom 20px
+  padding-top 20px
+  @media screen and (max-width: 768px)
+    padding-bottom 100px
+  .wrapper
+    position relative
+  .politicy
+    position relative
+    display inline-block
+    vertical-align middle
+    width auto
+    margin-top 15px
+    background url("../images/politicy.png") no-repeat left center
+    padding-left 15px
+    a
+      color #515151
+      text-decoration underline
+      &:hover
+        text-decoration none
+  .socials
+    text-align center
+    a
+      display inline-block
+      vertical-align top
+      border-radius 5px
+      margin-right 2.5px
+      margin-left 2.5px
+      width 46px
+      height 46px
+      img
+        display none
+      &.vk
+        background: url('../images/sprite-soc-ico.png') no-repeat -5px -114px;
+        &:hover
+          background-position -115px -113px
+      &.facebook
+        background: url('../images/sprite-soc-ico.png') no-repeat -118px -5px;
+        &:hover
+          background-position -5px -59px
+      &.youtube
+        background: url('../images/sprite-soc-ico.png') no-repeat -173px -5px;
+        &:hover
+          background-position -170px -59px
+  .top, .bottom
+    clearfix()
+  .logo
+    float left
+    @media screen and (max-width: 460px)
+      float none
+      width 183px
+      display block
+      height 112px
+      margin -10px auto
+  .contacts
+    float right
+    text-align right
+    padding-top 35px
+    @media screen and (max-width: 460px)
+      float none
+      width 100%
+      text-align center
+    .tel
+      black()
+      a
+        color #fff
+        font-size 24px
+        cursor default
+    .callback
+      a
+        color #fff
+        border-bottom 1px dashed #fff
+        &:hover
+          border-color transparent
+  .services,
+  .socials,
+  .locate
+    float left
+    width 33.333%
+    padding-top 20px
+    @media screen and (max-width: 768px)
+      width 50%
+    @media screen and (max-width: 567px)
+      width 100%
+      text-align center
+  .services
+    color #fff
+    a
+      color #fff
+    .title
+      bold()
+      font-size 18px
+      margin-bottom 10px
+    ul
+      li
+        padding 5px 0
+        a
+          text-decoration underline
+          &:hover
+            text-decoration none
+  .locate
+    text-align right
+    color #fff
+    @media screen and (max-width: 768px)
+      width 50%
+    @media screen and (max-width: 567px)
+      width 100%
+      text-align center
+    .loc
+      font-size 18px
+      margin-bottom 15px
+    p
+      margin-bottom 0
+  .socials
+    padding-top 95px
+    @media screen and (max-width: 768px)
+      padding-top 20px
+      text-align right
+      position absolute
+      right 0
+      padding-right 25px
+      bottom -70px
+      width 100%
+    @media screen and (max-width: 567px)
+      text-align center
+      padding-right 0
+      bottom -80px
+    .title
+      color #fff
+      font-size 18px
+      margin-bottom 10px

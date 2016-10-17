@@ -1,0 +1,378 @@
+doctype html
+html(lang="ru").no-js
+  head
+    title Mango Media | РАЗРАБОТКА ЛЕНДИНГ ПЕЙДЖ
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(name="msapplication-tap-highlight" content="no")
+    link(rel="icon" href="favicon.ico" type="image/x-icon")
+    link(rel="stylesheet" href="css/plugins.css")
+    link(rel="stylesheet" href="css/app.min.css")
+  body
+    // ty popup
+    a(class="popup-with-zoom-anim" id="ty" href="#popup-ty")
+    #popup-ty.zoom-anim-dialog.mfp-hide.popup
+      a(class="popup-modal-dismiss" href="#") ×
+      .vertical-outer
+        .vertical-inner
+          .small-container
+            h2(data-title="Спасибо!") Спасибо!
+            p(data-title="мы получили вашу заявку и скоро с вами свяжемся.") мы получили вашу заявку и скоро с вами свяжемся.
+
+    // Callback project
+    #popup-callbackprj.zoom-anim-dialog.mfp-hide.popup
+      a(class="popup-modal-dismiss" href="#") ×
+      .vertical-outer
+        .vertical-inner
+          .small-container
+            h2(data-title="Оценка проекта") Оценка проекта
+            p(data-title="заполните форму, чтобы мы смогли с вами связаться") заполните форму, чтобы мы смогли с вами связаться
+            form(action="form-callback.php" method='post' class="form")
+              .row.full
+                .form-label
+                  input(type="text" autocomplete="off" placeholder='Ваше имя' name='name' class="form-input" required="required")
+              .row.full
+                .form-label
+                  input(type="tel" autocomplete="off" placeholder='Ваш телефон' name='tel' class="form-input" required="required")
+              .row.full
+                .form-label
+                  input(type="email" autocomplete="off" placeholder='Ваш email' name='email' class="form-input" required="required")
+              .form-submit
+                input(type="hidden" name="types" value="")
+                button(type="submit" class="form-submit button ripple") Отправить
+    // Callback
+    #popup-callback.zoom-anim-dialog.mfp-hide.popup
+      a(class="popup-modal-dismiss" href="#") ×
+      .vertical-outer
+        .vertical-inner
+          .small-container
+            h2(data-title="Обратный звонок") Обратный звонок
+            p(data-title="заполните форму, чтобы мы смогли с вами связаться") заполните форму, чтобы мы смогли с вами связаться
+            form(action="form-callback.php" method='post' class="form")
+              .row.full
+                .form-label
+                  input(type="text" autocomplete="off" placeholder='Ваше имя' name='name' class="form-input" required="required")
+              .row.full
+                .form-label
+                  input(type="tel" autocomplete="off" placeholder='Ваш телефон' name='tel' class="form-input" required="required")
+              .row.full
+                .form-label
+                  input(type="email" autocomplete="off" placeholder='Ваш email' name='email' class="form-input" required="required")
+              .form-submit
+                button(type="submit" class="form-submit button ripple") Отправить
+    // project
+    #popup-project.zoom-anim-dialog.mfp-hide.popup
+      a(class="popup-modal-dismiss" href="#") ×
+      .vertical-outer
+        .vertical-inner
+          .small-container
+            h2(data-title="Расскажите о проекте") Расскажите о проекте
+            p(data-title=" ")
+            form(action="form-project.php" method='post' class="form")
+              .row.full
+                .form-label
+                  select(class="js-select")
+                    option(value="" selected disabled) Выберите категорию
+                    option(value="Бизнес, товары") Бизнес, товары
+                    option(value="Консалтинг") Консалтинг
+                    option(value="Ремонт, строительство") Ремонт, строительство
+                    option(value="Мебель, интерьеры") Мебель, интерьеры
+                    option(value="Программы, IT") Программы, IT
+                    option(value="Сфера развлечений") Сфера развлечений
+                    option(value="Обучение, курсы") Обучение, курсы
+                    option(value="Личные страницы") Личные страницы
+                    option(value="Финансы, экономика") Финансы, экономика
+                    option(value="Юридические услуги") Юридические услуги
+                    option(value="Автомобили аксесуары") Автомобили аксесуары
+                    option(value="Строительство, недвижимость") Строительство, недвижимость
+                    option(value="Путешествия, услуги") Путешествия, услуги
+                    option(value="Одежда и аксуссуары") Одежда и аксуссуары
+                    option(value="Услуги для дома/офиса") Услуги для дома/офиса
+                    option(value="Кафе, рестораны") Кафе, рестораны
+                    option(value="Производство") Производство
+                    option(value="Медицина") Медицина
+                    option(value="Другое") Другое
+              .row.full
+                .form-label
+                  input(type="email" autocomplete="off" placeholder='Ваш email' name='email' class="form-input" required="required")
+              .row.full
+                .form-label
+                  textarea(placeholder="Ваше сообщение" name="textarea" class="form-textarea" required="required")
+              .form-submit
+                input(type="hidden" name="project-category" value="")
+                button(type="submit" class="form-submit button ripple") Отправить
+    section.m_lead
+      .wrapper
+        header
+          a(class="logo" href="#"): img(src="images/logo.png", alt="")
+          .contacts
+            .tel: a(href="tel:+84952550566") 8 (495) 255 05 66
+            .callback: a(class="popup-with-zoom-anim" href="#popup-callback") Заказать звонок
+        .vertical-outer
+          .vertical-inner
+            h1 <span>РАЗРАБОТКА</span>ЛЕНДИНГ ПЕЙДЖ
+            P Оригинальные идеи и проверенные техники создания продающих сайтов <br>для увеличения спроса на ваш продукт
+            .action: a(class="button ripple popup-with-zoom-anim" href="#popup-project") Расскажите о своем проекте
+    section.m_about
+      .wrapper
+        p Mango Media (digital agency) - это креативная команда разработчиков, с высокой компетенцией в области проектирования, дизайна, стратегии подвижения и автоматизации. Именно благодаря созданию нового сайта, мы, совершенствуем образ продукта, делая его востребованным, а бизнес эффективным. <br>Наша цель - всегда помогать своим клиентам быть на шаг впереди рынка.
+    section.m_services
+      .wrapper
+        .column
+          .vertical-outer
+            .vertical-inner
+              .section-title
+                h2 <span>Что мы </span>делаем?
+                p Мы оказываем полный комплекс услуг, решающий все задачи по разработке и продвижению сайта.
+        .column
+          .vertical-outer
+            .vertical-inner
+              .list
+                .item
+                  .image: img(src="images/service-1.png" alt="")
+                  .title Проектирование
+                  ul
+                    li Информационная архитектура
+                    li Прототипирование
+                    li Копирайтинг
+                .item
+                  .image: img(src="images/service-2.png" alt="")
+                  .title Дизайн
+                  ul
+                    li Дизайна сайта
+                    li Фирменный стиль
+                    li Визуализации
+                .item
+                  .image: img(src="images/service-3.png" alt="")
+                  .title Разработка
+                  ul
+                    li Верстка (front-end, back-end)
+                    li Интеграция с CRM
+                    li Установка скриптов
+                .item
+                  .image: img(src="images/service-4.png" alt="")
+                  .title Маркетинг
+                  ul
+                    li Реламные кампании
+                    li Веб-аналитика
+                    li Оптимизация
+    section.m_works
+      .wrapper
+        h2 примеры наших работ
+      .list
+        .item(style="background-image: url(images/works/1.jpg)")
+          .details
+            .title Works title
+            .tags Tags
+            a(class="ripple" href="#")
+        .item(style="background-image: url(images/works/2.jpg)")
+          .details
+            .title Works title
+            .tags Tags
+            a(class="ripple" href="#")
+        .item(style="background-image: url(images/works/3.jpg)")
+          .details
+            .title Works title
+            .tags Tags
+            a(class="ripple" href="#")
+        .item(style="background-image: url(images/works/4.jpg)")
+          .details
+            .title Works title
+            .tags Tags
+            a(class="ripple" href="#")
+        .item(style="background-image: url(images/works/5.jpg)")
+          .details
+            .title Works title
+            .tags Tags
+            a(class="ripple" href="#")
+        .item(style="background-image: url(images/works/6.jpg)")
+          .details
+            .title Works title
+            .tags Tags
+            a(class="ripple" href="#")
+        .item(style="background-image: url(images/works/7.jpg)")
+          .details
+            .title Works title
+            .tags Tags
+            a(class="ripple" href="#")
+        .item(style="background-image: url(images/works/8.jpg)")
+          .details
+            .title Works title
+            .tags Tags
+            a(class="ripple" href="#")
+      .action: a(class="button ripple" href="#") Смотреть портфолио
+    section.m_prices
+      .wrapper
+        h2 стоимость проекта
+        p зависит от входящих в разрабботку услуг, для начала выберите из списка то, что считаете нужными
+        .columns
+          .column
+            .title Проектирование,<br>дизайн
+            .list
+              .item
+                  label
+                    input(name="services" type="checkbox" value="Анализ рынка и конкурентов")
+                    span.cb-icon
+                    span.cb-label Анализ рынка и конкурентов
+              .item
+                  label
+                    input(name="services" type="checkbox" value="Копирайтинг + архитектура")
+                    span.cb-icon
+                    span.cb-label Копирайтинг + архитектура
+              .item
+                  label
+                    input(name="services" type="checkbox" value="Прототипирование (UX)")
+                    span.cb-icon
+                    span.cb-label Прототипирование (UX)
+              .item
+                  label
+                    input(name="services" type="checkbox" value="Разработка дизайн-макетов сайта")
+                    span.cb-icon
+                    span.cb-label Разработка дизайн-макетов сайта
+              .item
+                  label
+                    input(name="services" type="checkbox" value="Разработка фирменного стиля")
+                    span.cb-icon
+                    span.cb-label Разработка фирменного стиля
+          .column
+            .title Разроботка<br>(Front-End, Back-end)
+            .list
+              .item
+                  label
+                    input(name="services" type="checkbox" value="Верстка макетов сайта")
+                    span.cb-icon
+                    span.cb-label Верстка макетов сайта
+              .item
+                  label
+                    input(name="services" type="checkbox" value="Анимация. Параллакс эффекты")
+                    span.cb-icon
+                    span.cb-label Анимация. Параллакс эффекты
+              .item
+                  label
+                    input(name="services" type="checkbox" value="Адаптация под мобильные устройства")
+                    span.cb-icon
+                    span.cb-label Адаптация под мобильные устройства
+              .item
+                  label
+                    input(name="services" type="checkbox" value="Подключение CMS")
+                    span.cb-icon
+                    span.cb-label Подключение CMS
+              .item
+                  label
+                    input(name="services" type="checkbox" value="Интеграция с CRM системой")
+                    span.cb-icon
+                    span.cb-label Интеграция с CRM системой
+          .column
+            .title Настройка,<br>маркетинг
+            .list
+              .item
+                  label
+                    input(name="services" type="checkbox" value="Подключение веб-аналитики")
+                    span.cb-icon
+                    span.cb-label Подключение веб-аналитики
+              .item
+                  label
+                    input(name="services" type="checkbox" value="Настройка контекстной рекламы")
+                    span.cb-icon
+                    span.cb-label Настройка контекстной рекламы
+              .item
+                  label
+                    input(name="services" type="checkbox" value="Установка дополнительных скриптов")
+                    span.cb-icon
+                    span.cb-label Установка дополнительных скриптов
+              .item
+                  label
+                    input(name="services" type="checkbox" value="Настройка системы «мультилендинг»")
+                    span.cb-icon
+                    span.cb-label Настройка системы «мультилендинг»
+              .item
+                  label
+                    input(name="services" type="checkbox" value="А/Б тестирования")
+                    span.cb-icon
+                    span.cb-label А/Б тестирования
+              .item
+                  label
+                    input(name="services" type="checkbox" value="Анализ и оптимизация РК")
+                    span.cb-icon
+                    span.cb-label Анализ и оптимизация РК
+        .action: a(class="button ripple popup-with-zoom-anim" href="#popup-callbackprj") Узнать стоимость проекта
+    section.m_steps
+      .wrapper
+        h2 Прозрачный процесс разработки
+        p Мы делаем работу над проектом максимально прозрачной и понятной для своих клиентов,  согласовывая каждый этап
+        .steps-nav
+          ul
+            li.current 1
+            li 2
+            li 3
+            li 4
+            li 5
+        .steps
+          .item.current
+            .image: img(src="images/step-1.png", alt="")
+            .title Бриф
+            .desc Определение задач проекта, обсуждение  особенностей бизнеса, согласование  работ,  составление тех. задания
+          .item
+            .image: img(src="images/step-2.png", alt="")
+            .title Прототип
+            .desc Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+          .item
+            .image: img(src="images/step-3.png", alt="")
+            .title Дизайн
+            .desc Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+          .item
+            .image: img(src="images/step-4.png", alt="")
+            .title Верстка
+            .desc Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+          .item
+            .image: img(src="images/step-5.png", alt="")
+            .title Запуск
+            .desc Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+    section.m_hook
+      .wrapper
+        h2 <span>Остались </span>вопросы?
+        .row
+          .contacts
+            .tel: a(href="tel:74953503489") +7 (495) 350-34-89
+            .email: a(href="mailto:mail@mango-media.ru") mail@mango-media.ru
+          .form-container
+            form(action="form.php" method='post' class="form tyneed")
+              .row
+                .form-label
+                  input(type="text" autocomplete="off" placeholder='Ваше имя' name='name' class="form-input" required="required")
+                .form-label
+                  input(type="email" autocomplete="off" placeholder='Ваш email' name='email' class="form-input" required="required")
+              .row.full
+                .form-label
+                  textarea(placeholder="Ваше сообщение" name="textarea" class="form-textarea" required="required")
+              .form-submit
+                button(type="submit" class="form-submit button ripple") Отправить
+    footer.m_footer
+      .wrapper
+        .top
+          a(class="logo" href="#"): img(src="images/logo-footer.png", alt="")
+          .contacts
+            .tel: a(href="tel:+84993503489") 8 (499) 350 34 89
+            .callback: a(class="popup-with-zoom-anim" href="#popup-callback") Заказать звонок
+        .bottom
+          .services
+            .title Наши услуги
+            ul
+              li: a(target="_blank" href="http://context.mango-media.ru/") Контекстная реклама
+              li: a(target="_blank" href="http://marketing.mango-media.ru/") Комплексный маркетинг
+              li: a(target="_blank" href="http://lp.mango-media.ru/") Разработка Landing page
+              li: a(target="_blank" href="http://instagram.mango-media.ru/") Продвижение в Instagram
+          .socials
+            .title Присоединяйтесь к нам:
+            a(target="_blank" class="vk" href="https://vk.com/mango_media"): img(src="images/vk.png", alt="")
+            a(target="_blank" class="facebook" href="https://www.facebook.com/mango.agency"): img(src="images/facebook.png", alt="")
+            a(target="_blank" class="youtube" href="https://www.youtube.com/c/MangoMedia_channel"): img(src="images/youtube.png", alt="")
+          .locate
+            .loc Москва, Рязанский проспект, 10/18<br>БЦ "Хамелеон", офис 4.11
+            p ООО "Манго Медиа"<br>ОГРН 1137746984539
+            .politicy: a(href="http://mango-lp.ru/conf.pdf") Политика конфидициальности
+    // JS
+    script(src="js/jquery.min.js")
+    script(src="js/plugins.js")
+    script(src="js/app.js")

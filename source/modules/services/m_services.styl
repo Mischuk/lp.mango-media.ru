@@ -1,0 +1,126 @@
+.m_services
+  position relative
+  height 710px
+  @media screen and (max-width: 992px)
+    height auto
+    padding 105px 0
+    background: rgba(235,235,235,1);
+    background: -moz-linear-gradient(top, rgba(235,235,235,1) 0%, rgba(255,255,255,1) 75%, rgba(255,255,255,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(235,235,235,1)), color-stop(75%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1)));
+    background: -webkit-linear-gradient(top, rgba(235,235,235,1) 0%, rgba(255,255,255,1) 75%, rgba(255,255,255,1) 100%);
+    background: -o-linear-gradient(top, rgba(235,235,235,1) 0%, rgba(255,255,255,1) 75%, rgba(255,255,255,1) 100%);
+    background: -ms-linear-gradient(top, rgba(235,235,235,1) 0%, rgba(255,255,255,1) 75%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(to bottom, rgba(235,235,235,1) 0%, rgba(255,255,255,1) 75%, rgba(255,255,255,1) 100%);
+  @media screen and (max-width: 460px)
+    padding 50px 20px
+    padding-right 0
+  &:before
+    content ''
+    position absolute
+    left 0
+    top 0
+    width 45%
+    height 100%
+    background url("../images/services-background2.jpg") no-repeat left bottom
+    background-size cover
+    background-attachment fixed
+    @media screen and (max-width: 1200px)
+      background-attachment initial
+    @media screen and (max-width: 992px)
+      display none
+  &:after
+    content ''
+    position absolute
+    left 0
+    top 0
+    width 45%
+    height 100%
+    background rgba(255,255,255,.85)
+    @media screen and (max-width: 992px)
+      display none
+  .column
+    position relative
+    z-index 1
+    float left
+    height 100%
+    &:first-child
+      width 40%
+    &:last-child
+      width 60%
+    @media screen and (max-width: 992px)
+      width 100% !important
+      height auto
+      float none
+  .section-title
+    text-align left
+    h2
+      black()
+      text-transform uppercase
+      font-size 65px
+      color #333
+      margin-bottom 20px
+      @media screen and (max-width: 992px)
+        font-size 55px
+      @media screen and (max-width: 680px)
+        font-size 45px
+      @media screen and (max-width: 360px)
+        font-size 35px
+      span
+        bold()
+        display block
+        color #f1cc37
+        font-size 30px
+    p
+      color #777
+      font-size 18px
+      line-height 25px
+  .list
+    clearfix()
+    padding-left 100px
+    @media screen and (max-width: 1200px)
+      padding-left 70px
+    @media screen and (max-width: 992px)
+      padding-left 0
+    .item
+      float left
+      width 50%
+      padding 30px 0
+      text-align left
+      &:nth-child(even)
+        padding-left 50px
+      @media screen and (max-width: 992px)
+        padding-bottom 0
+        padding-top 45px
+        &:nth-child(2n+1)
+          clear left
+      @media screen and (max-width: 460px)
+        float none
+        width 100%
+        padding-left 0 !important
+      .title
+        black()
+        margin-top 30px
+        margin-bottom 15px
+        color #333
+        font-size 24px
+        @media screen and (max-width: 992px)
+          margin-top 15px
+      li
+        position relative
+        padding-left 15px
+        color #777
+        @media screen and (max-width: 992px)
+          padding-left 0
+        &:after
+          content ''
+          width 6px
+          height 12px
+          background #dadada
+          position absolute
+          left 0
+          top 50%
+          margin-top -6px
+          @media screen and (max-width: 992px)
+            display none
+        & + li
+          margin-top 10px

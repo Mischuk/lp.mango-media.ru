@@ -1,0 +1,168 @@
+.my-mfp-zoom-in .zoom-anim-dialog
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  transition-delay .3s
+  transform: scale(0.8);
+
+/* animate in */
+.my-mfp-zoom-in.mfp-ready .zoom-anim-dialog
+  opacity 1
+  transform scale(1)
+  border-radius 0
+
+/* animate out */
+.my-mfp-zoom-in.mfp-removing .zoom-anim-dialog
+  transform scale(0)
+  border-radius 100%
+  opacity 0
+  transition-delay 0s
+
+
+/* Dark overlay, start state */
+.my-mfp-zoom-in.mfp-bg
+  opacity: 1;
+  border-radius 100%
+  transform scale(0)
+  transition: all 0.3s ease-out;
+
+/* animate in */
+.my-mfp-zoom-in.mfp-ready.mfp-bg
+  opacity: 1;
+  transform scale(1)
+  border-radius 0
+
+/* animate out */
+.my-mfp-zoom-in.mfp-removing.mfp-bg
+  opacity: 1;
+  border-radius 100%
+  transform scale(0)
+
+
+html, body
+  position relative
+///////////////////
+.my-mfp-zoom-in.mfp-ready.mfp-bg
+  position fixed !important
+  height 100% !important
+.mfp-bg
+  left 0 !important
+  top 0 !important
+  width 100% !important
+  &:after,
+  &:before
+    opacity 0
+    anim()
+    transition-delay .5s
+  &:after
+    content ''
+    width 863px
+    height 1013px
+    background url("../images/lead-figure-2-modals.png") no-repeat 0 0
+    position absolute
+    right -300px
+    bottom -400px
+    @media screen and (max-width: 1200px)
+      right -500px
+    @media screen and (max-width: 768px)
+      display none
+  &:before
+    content ''
+    width 876px
+    height 971px
+    background url("../images/lead-figure-1-modals.png") no-repeat 0 0
+    position absolute
+    left -250px
+    top 0
+    margin-top -410px
+    @media screen and (max-width: 1200px)
+      left -350px
+    @media screen and (max-width: 768px)
+      display none
+.my-mfp-zoom-in.mfp-ready.mfp-bg
+  background #fff
+  &:after,
+  &:before
+    opacity 1
+.popup-modal-dismiss
+  regular()
+  anim()
+  position absolute
+  right 100px
+  top 70px
+  color #333
+  font-size 80px
+  opacity .3
+  z-index 12
+  @media screen and (max-width: 768px)
+    right 10px
+    top -20px
+  @media screen and (max-width: 1200px)
+    right 10px
+    top -20px
+  &:hover
+    opacity .9
+.mfp-content
+  height 100%
+.popup
+  anim()
+  margin: 0 auto;
+  position: relative;
+  opacity 0
+  width 100%
+  height 100%
+  &.show
+    opacity 1
+.small-container
+  max-width 850px
+  margin 0 auto
+  position relative
+  z-index 10
+  @media screen and (max-height: 600px)
+    padding 45px 0
+    .form-label
+      input
+        height 30px
+      textarea
+        height 100px
+      .select2-container .select2-selection--single .select2-selection__rendered
+        line-height 30px
+      .select2-container .select2-selection--single
+        height 30px
+
+  @media screen and (max-height: 450px)
+    padding 20px 0
+  @media screen and (max-height: 350px)
+    textarea
+      height 75px !important
+  form
+    max-width 450px
+    margin 0 auto
+    .form-submit
+      text-align center
+  h2
+    black()
+    text-transform uppercase
+    font-size 65px
+    color #333
+    margin-bottom 0
+    text-align center
+    @media screen and (max-width: 992px)
+      font-size 55px
+    @media screen and (max-width: 680px)
+      font-size 45pxs
+    @media screen and (max-height: 600px)
+      font-size 45px
+    @media screen and (max-width: 568px)
+      font-size 28px
+    @media screen and (max-height: 450px)
+      font-size 28px
+    & + p
+      font-size 32px
+      color #333333
+      text-align center
+      @media screen and (max-width: 992px)
+        font-size 22px
+      @media screen and (max-width: 680px)
+        font-size 18px
+      @media screen and (max-height: 600px)
+        font-size 18px

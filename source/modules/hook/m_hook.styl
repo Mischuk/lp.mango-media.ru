@@ -1,0 +1,118 @@
+.m_hook
+  padding 105px 0
+  @media screen and (max-width: 460px)
+    padding 50px 0
+  h2, .row
+    float left
+    width 100%
+  h2
+    black()
+    text-align left
+    text-transform uppercase
+    font-size 65px
+    color #333
+    margin-bottom 20px
+    border-left 10px solid #fbe44e
+    padding-left 20px
+    @media screen and (max-width: 992px)
+      font-size 55px
+    @media screen and (max-width: 680px)
+      font-size 45px
+    @media screen and (max-width: 360px)
+      font-size 35px
+    span
+      bold()
+      display block
+      color #f1cc37
+      font-size 30px
+  .contacts
+    float left
+    width 40%
+    text-align left
+    padding-top 90px
+    @media screen and (max-width: 768px)
+      width 100%
+      float none
+      padding-top 25px
+    > div
+      padding 10px 40px
+      a
+       color #777777
+       text-decoration none
+       font-size 18px
+    .email
+      background url("../images/email.png") no-repeat left center
+      a
+        &:hover
+          text-decoration underline
+          color #333
+    .tel
+      background url("../images/tel.png") no-repeat left center
+      a
+        cursor default
+  .form-container
+    float right
+    width 60%
+    @media screen and (max-width: 768px)
+      width 100%
+      float none
+      margin-top 25px
+    form
+      max-width 600px
+      margin-left auto
+      @media screen and (max-width: 768px)
+        max-width 100%
+    label.error
+      display none !important
+    .row
+      .form-label
+        float left
+        width 50%
+        padding-right 15px
+        @media screen and (max-width: 480px)
+          float none
+          width 100%
+          padding-right 0
+        &:last-child
+          padding-right 0
+          padding-left 15px
+          @media screen and (max-width: 480px)
+            padding-left 0
+      &.full
+        .form-label
+          width 100%
+          float none
+          padding-left 0
+          padding-right 0
+    .form-label
+      margin-bottom 30px
+      @media screen and (max-width: 480px)
+        margin-bottom 15px
+      input, textarea
+        width 100%
+        padding-left 10px
+        padding-right 10px
+        border 2px solid #eeeeee
+        &:focus
+          border-color #fbe44e
+      input
+        height 60px
+        font-size 18px
+        border-left none
+        border-right none
+        border-top none
+        font-size 24px
+        color #333
+      textarea
+        height 150px
+        padding-top 10px
+        padding-bottom 10px
+        resize none
+    .form-submit
+      text-align right
+      @media screen and (max-width: 568px)
+        text-align center
+      .form-submit
+        padding-left 70px
+        padding-right 70px
+        margin 0

@@ -1,9 +1,9 @@
-# Project
+# lp.mango-media.ru
 
 ## Демо
-Смотреть: [frontende.info/project](http://frontende.info/project)
+Смотреть: [frontende.info/lp.mango-media.ru](http://frontende.info/lp.mango-media.ru/)
 
-Скачать: [project-master.zip](https://github.com/Mischuk/project/archive/master.zip)
+Скачать: [project-master.zip](https://github.com/Mischuk/lp.mango-media.ru/archive/master.zip)
 
 ## Описание
 * Сборщик [Gulp](http://gulpjs.com/)
@@ -24,7 +24,6 @@
 * Склонировать или скачать проект
 * Установить gulp глобально (один раз!): `npm i -g gulp`
 * Установить зависимости (1 раз на проект): `npm i`
-* Переименовать `gulpfile` в `gulpfile.js`
 * Запустить gulp: `gulp dev`
 
 Проект будет доступен по адресу [`http://localhost:8080/`](http://localhost:8080/)
@@ -34,6 +33,7 @@
 * `gulp dev` - запускает вотчеры и сервер
 * `gulp build` - собирает проект и заливает на сервер
 * `gulp zip` - архивирует проект в zip архив
+* `gulp ftp` - заливает сборку на ftp
 
 ## Структура проекта
 

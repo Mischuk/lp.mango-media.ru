@@ -5,15 +5,15 @@ if( clean($_POST["name"]) == 'q' || clean($_POST["name"]) == 'й'  ) :
     $mailto  = 'mischuk.alexander@gmail.com';
 elseif( clean($_POST["name"]) == 'test' || clean($_POST["name"]) == 'тест' ) :
     // Отправляем только нам
-    $mailto  = 'marat@lmg-media.com'.',';
-    $mailto  .= 'mb@lmg-media.com';
+    $mailto  = 'mischuk.alexander@gmail.com'.',';
+    $mailto  .= 'mischuk.alexander@gmail.com';
 else :
     // Отправляем всем
-    $mailto  = 'marat@lmg-media.com'.',';
-    $mailto  .= 'mb@lmg-media.com';
+    $mailto  = 'mischuk.alexander@gmail.com'.',';
+    $mailto  .= 'mischuk.alexander@gmail.com';
     // Скрытые копии
-    $mailto_hiden = "bcc: marat@lmg-media.com".',';
-    $mailto_hiden .= 'bcc: mb@lmg-media.com';
+    $mailto_hiden = "bcc: mischuk.alexander@gmail.com".',';
+    $mailto_hiden .= 'bcc: mischuk.alexander@gmail.com';
 endif;
 
 $title = 'Заявка';

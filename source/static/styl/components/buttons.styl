@@ -2,18 +2,22 @@
 .mobile-menu-trigger
   anim()
   display block
-  position absolute
-  z-index 10
-  left 0
-  top 50%
-  width 50%
-  height 40px
-  margin-top -(@height/2)
+  position fixed
+  z-index 20
+  top 50px
+  right 50%
+  margin-right -550px
+  width 40px
+  height 26px
   border 2px solid transparent
   cursor pointer
-  background #810000
-  @media screen and (min-width: 768px)
-    display none
+  background none
+  @media screen and (max-height: 400px)
+    top 15px
+  @media screen and (max-width: 1200px)
+    margin-right 0
+    right 30px
+    top 30px
   &:after,
   &:before,
   span
@@ -21,25 +25,25 @@
     content ''
     position absolute
     left 50%
-    width 20px
+    width 40px
     margin-left -10px
     height 2px
-    background #fff
+    background #777777
   &:before
-    top 10px
+    top 0px
   &:after
-    bottom 10px
+    bottom 0px
   span
     top 50%
     margin-top -1.5px
   &.open
     span
       opacity 0
-      transform translateX(-5px)
+      transform translateX(-10px)
     &:after
-      transform rotate(135deg) translate(-6px, 6px)
+      transform rotate(135deg) translate(-9px, 9px)
     &:before
-      transform rotate(-135deg) translate(-4px, -4px)
+      transform rotate(-135deg) translate(-6px, -6px)
 
 .ripple
   overflow:hidden;

@@ -96,7 +96,7 @@ $(function() {
       type: 'inline',
       modal: true,
       preloader: false,
-      removalDelay: 300,
+      removalDelay: 0,
       alignTop: false,
       overflowY: 'hidden',
       mainClass: 'my-mfp-zoom-in',
@@ -212,6 +212,34 @@ $(function() {
       }
 
     });
+
+
+    function menus() {
+      $('.mobile-menu-trigger').on('click', function(){
+        $(this).toggleClass('open');
+        $('.layout-background').toggleClass('active');
+        $('.menu-navs nav').toggleClass('open');
+      });
+
+      $('nav a[href*="#"]:not([href="#"])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html, body').animate({
+                scrollTop: target.offset().top
+              }, 500);
+              return false;
+            }
+          }
+        });
+      $('.menu-navs nav a, .layout-background').on('click', function () {
+        $('.mobile-menu-trigger').removeClass('open');
+        $('.layout-background').removeClass('active');
+        $('.menu-navs nav').removeClass('open');
+      });
+    };
+    menus();
 
 
     console.log('Initial header.js');
